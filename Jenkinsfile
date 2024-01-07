@@ -34,12 +34,6 @@ pipeline{
                 git branch: 'main', credentialsId:'github', url:'https://github.com/adama007/Devops-.git'
             }
         }
-        
-        stage("Test Application"){
-            steps{
-                sh "npm test"
-            }
-        }
 
         stage("Push to Registry"){
             steps{

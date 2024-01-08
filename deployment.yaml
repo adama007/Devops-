@@ -61,9 +61,9 @@ spec:
     spec:
       containers:
         - name: todo-api
-          image: adamchouk23/devopappl
+          image: adamchouk23/devops
           ports:
-            - containerPort: 4000
+            - containerPort: 5000
           envFrom:
             - configMapRef:
                 name: todo-app-config
@@ -80,7 +80,7 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 4000
+      targetPort: 5000
   type: LoadBalancer
 
 ---

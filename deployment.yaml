@@ -61,7 +61,7 @@ spec:
     spec:
       containers:
         - name: todo-api
-          image: adamchouk23/devopsapplication
+          image: adamchouk23/devopsappli
           ports:
             - containerPort: 4000
           envFrom:

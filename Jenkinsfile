@@ -8,7 +8,7 @@ pipeline{
     }
     environment {
         // Initialize global variables here
-        APP_NAME="devopsapplica"
+        APP_NAME="devopsapplication"
         DOCKER_USER = "adamchouk23"
         DOCKER_PASS="dockerhub"
         IMAGE_NAME="${DOCKER_USER}"+"/"+"${APP_NAME}"

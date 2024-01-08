@@ -4,4 +4,4 @@ metadata:
   name: todo-app-config
 data:
   PORT: "4000"
-  MONGO_URI: "mongodb://mongo:27018/todo-app"
+  MONGO_URI: "mongodb://mongo:27017/todo-app"

@@ -22,7 +22,7 @@ spec:
         - name: mongo
           image: mongo:latest
           ports:
-            - containerPort: 27018
+            - containerPort: 27017
           volumeMounts:
             - name: mongo-data
               mountPath: /data/db
@@ -40,8 +40,8 @@ spec:
     app: mongo
   ports:
     - protocol: TCP
-      port: 27018
-      targetPort: 27018
+      port: 27017
+      targetPort: 27017
   type: LoadBalancer
 
 ---
@@ -61,7 +61,7 @@ spec:
     spec:
       containers:
         - name: todo-api
-          image: adamchouk23/devopsappli
+          image: adamchouk23/devopappl
           ports:
             - containerPort: 4000
           envFrom:
